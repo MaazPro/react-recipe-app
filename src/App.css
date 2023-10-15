@@ -1,6 +1,10 @@
 .App{
   min-height: 100vh;  
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+.scroll-bg {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/bg-image.jpg');
 }
 
 .search-form{
@@ -17,8 +21,6 @@
 }
 
 .search-button{
-  /* position: absolute; */
-  /* top:50%; */
   padding: 10px 20px;
   background-color:#b21f29;
   color: #fff;

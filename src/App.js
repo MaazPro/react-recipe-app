@@ -7,7 +7,7 @@ function App() {
   const APP_ID = 'cde205e5';
   const APP_KEY = '324e18ce5dd552a1a95f9b0f8e34f38b';
   
-  const [query, setQuery] = useState('chicken');
+  const [query, setQuery] = useState('veggies');
   useEffect(() => {getRecipe()}, [query]);
   const [recipe, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App scroll-bg">
       <form className='search-form' onSubmit={getSearch}>
         <input className='search-bar' type='text' value={search} onChange={updateSearch}/>
         <button className='search-button' type='submit'>
